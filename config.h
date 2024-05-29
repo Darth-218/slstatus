@@ -65,13 +65,14 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
     /* function            format          argument */
-    {ram_used, "^c#000000^^b#7A529D^ 󰍛 %s ", NULL},
-    {wifi_essid, "^b#5FD785^^c#000000^   %s ", "wlp4s0"},
-    {alsa_master_vol, "^c#000000^^b#87D7D6^ 󰕾 %4s ", NULL},
-    {datetime, "^b#D6875F^^c#000000^ %s ", "  %T "},
-    {keymap, "^c#000000^^b#AE81FF^ 󰌌  %s - ", NULL},
+    {ram_perc, "^b#000000^^c#C586C0^ 󰍛 %s%% ", NULL},
+    {ram_used, ": %s ", NULL},
+    {wifi_essid, "^c#5FD785^^b#000000^   %s ", "wlp4s0"},
+    {alsa_master_vol, "^b#000000^^c#87D7D6^ 󰕾 %4s ", NULL},
+    {datetime, "^c#e46876^^b#000000^ %s ", "  %T "},
+    {keymap, "^b#000000^^c#AE81FF^ 󰌌  %s - ", NULL},
     {keyboard_indicators, "%s - ", "n"},
     {keyboard_indicators, "%s  ", "c"},
-    {battery_state, "^b#FFAF5D^^c#000000^ %s ", "BAT1"},
+    {battery_state, "^c#FFAF5D^^b#000000^ %s ", "BAT1"},
     {battery_perc, "%s%% ", "BAT1"},
 };
